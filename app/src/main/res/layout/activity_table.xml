@@ -22,8 +22,10 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycle"
-        android:layout_width="395dp"
-        android:layout_height="658dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars = "vertical"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="65dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
         Button tableButton = (Button)findViewById(R.id.tableButton);
         Button drawingButton = (Button)findViewById(R.id.drawingButton);
-        Button webButton = (Button)findViewById(R.id.talkToWebButton);
+
 
 
         tableButton.setOnClickListener(new View.OnClickListener() {
@@ -35,12 +35,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        webButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent starIntent = new Intent(getApplicationContext(), WebActivity.class);
-                startActivity(starIntent);
-            }
-        });
+
     }
 }

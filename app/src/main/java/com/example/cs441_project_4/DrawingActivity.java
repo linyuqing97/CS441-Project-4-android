@@ -125,8 +125,8 @@ public class DrawingActivity extends AppCompatActivity implements NetResponse {
                 System.out.println("Clicked the compute button");
 
 
-                System.out.println(20);
-                String request = "value=" + 20;
+                System.out.println(m);
+                String request = "value=" + m;
                 netTask = new NetTask("https://cs.binghamton.edu/~pmadden/php/double.php", request, handle);
 
                 netTask.execute((Void) null);
@@ -161,7 +161,12 @@ public class DrawingActivity extends AppCompatActivity implements NetResponse {
             this.runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    computeResult.setText(updateString);
+                    m = Integer.parseInt(updateString);
+                    System.out.println("M is now : "+m);
+
+                    myCanvas.setStopY(m*(myCanvas.getStopX())+b);
+
+                    myCanvas.draw();
 
                 }
             });

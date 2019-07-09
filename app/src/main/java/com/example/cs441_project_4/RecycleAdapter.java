@@ -27,7 +27,7 @@ public class RecycleAdapter extends RecyclerView.Adapter<RecycleAdapter.ImageVie
     public void onBindViewHolder(ImageViewHolder holder, int position) {
         int image_id = imageArray[position];
         holder.Images.setImageResource(image_id);
-        holder.TV.setText("Image");
+        holder.TV.setText("Image "+position);
     }
 
     @Override

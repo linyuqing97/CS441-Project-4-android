@@ -20,7 +20,8 @@ public class TableActivity extends AppCompatActivity{
     private RecyclerView.LayoutManager layoutManager;
 
 
-    private int[] images = {R.drawable.gongbaojiding,R.drawable.mapodoufu,R.drawable.qingzhengluyu,R.drawable.shuizhuniurou,R.drawable.shanxiliangpi,R.drawable.fanqiechaojidan};
+    private int[] images = {R.drawable.gongbaojiding,R.drawable.mapodoufu,R.drawable.qingzhengluyu,R.drawable.shuizhuniurou,R.drawable.shanxiliangpi,R.drawable.fanqiechaojidan,
+    R.drawable.shuizhuyu,R.drawable.shuanlayu};
 
 
 
